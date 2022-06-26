@@ -1,0 +1,15 @@
+# This is a grinding macro example that is using pyautogui
+# The commands shown are from the Not Kohai bot.
+
+import time
+import pyautogui
+from colorama import Fore, Back, Style
+time.sleep(5)
+while True:
+    pyautogui.write('ppr')
+    pyautogui.press("enter")
+    pyautogui.write('pp!buy boost 1')
+    pyautogui.press("enter")
+    time.sleep(121)
+    print(Fore.LIGHTGREEN_EX + "Cycle Over!")
+
