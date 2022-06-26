@@ -1,0 +1,22 @@
+# A grinding self-bot that uses discord.py
+# The bot commands are from the Not Kohai bot.
+# !WARNING! Self-bots are not allowed on Discord. Use at own risk!!!
+
+import time
+import discord
+from discord.ext import commands
+config = {
+    'token':"token",
+    'prefix': '!',
+}
+
+bot = commands.Bot(command_prefix=config["prefix"], self_bot=True, fetch_offline_members=False)
+@bot.command()
+async def start(ctx):
+    print("Starting...")
+    await ctx.send("nb!hello")
+    await ctx.send("nb!truthordare dare")
+    print("Cycle Done!")
+    time.sleep(20)
+
+bot.run(config['token'],bot=False)
